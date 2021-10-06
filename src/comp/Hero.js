@@ -123,8 +123,8 @@ function Hero() {
 
   return (
     <div className="container mt-3 col-sm-12">
-      <div className="row col-12">
-        <div className="col-lg-6 ms-2 col-sm-12 shadow-lg mb-3">
+      <div className="row ms-2 col-12">
+        <div className="col-lg-6  shadow-lg mb-3">
           <Doughnut
             className="chart"
             options={options}
@@ -132,7 +132,7 @@ function Hero() {
             data={data ? data : <CircularProgress />}
           />
         </div>
-        <div className="col-lg-6 ms-2 col-sm-12 shadow-lg mb-3">
+        <div className="col-lg-6 shadow-lg mb-3">
           <Doughnut
             className="chart"
             options={options2}
