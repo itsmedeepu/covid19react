@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/covid19react/static/css/main.0065815d.chunk.css",
+    "main.js": "/covid19react/static/js/main.72e42305.chunk.js",
+    "main.js.map": "/covid19react/static/js/main.72e42305.chunk.js.map",
+    "runtime-main.js": "/covid19react/static/js/runtime-main.7766da0e.js",
+    "runtime-main.js.map": "/covid19react/static/js/runtime-main.7766da0e.js.map",
+    "static/css/2.dc46c343.chunk.css": "/covid19react/static/css/2.dc46c343.chunk.css",
+    "static/js/2.c30f4767.chunk.js": "/covid19react/static/js/2.c30f4767.chunk.js",
+    "static/js/2.c30f4767.chunk.js.map": "/covid19react/static/js/2.c30f4767.chunk.js.map",
+    "index.html": "/covid19react/index.html",
+    "static/css/2.dc46c343.chunk.css.map": "/covid19react/static/css/2.dc46c343.chunk.css.map",
+    "static/css/main.0065815d.chunk.css.map": "/covid19react/static/css/main.0065815d.chunk.css.map",
+    "static/js/2.c30f4767.chunk.js.LICENSE.txt": "/covid19react/static/js/2.c30f4767.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/covid19react/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7766da0e.js",
+    "static/css/2.dc46c343.chunk.css",
+    "static/js/2.c30f4767.chunk.js",
+    "static/css/main.0065815d.chunk.css",
+    "static/js/main.72e42305.chunk.js"
+  ]
+}
