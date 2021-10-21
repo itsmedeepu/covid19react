@@ -1,8 +1,57 @@
 import React, { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
-
+import MaterialTable from "material-table";
 function Hero2() {
   const [vacci, setvacci] = useState([]);
+  const [Data, setDistrict] = useState([]);
+
+  const columns = [
+    {
+      title: "State",
+      field: "state",
+    },
+    {
+      title: "Active Cases",
+      field: "active",
+    },
+    {
+      title: "Confirmed Cases",
+      field: "confirmed",
+    },
+    {
+      title: "Deaths",
+      field: "deaths",
+    },
+
+    {
+      title: "Delta Confirmed",
+      field: "deltaconfirmed",
+    },
+    {
+      title: "Delta Recovered",
+      field: "deltarecovered",
+    },
+    {
+      title: "Delta Deaths",
+      field: "deltadeaths",
+    },
+    {
+      title: "Last Updated",
+      field: "lastupdatedtime",
+    },
+  ];
+
+  useEffect(() => {
+    try {
+      fetch("https://data.covid19india.org/data.json")
+        .then((resp) => resp.json())
+        // .then((resp) => console.log(resp));
+        .then((resp) => setDistrict(resp.statewise));
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
+
   useEffect(() => {
     try {
       fetch("https://data.covid19india.org/v4/min/data.min.json")
@@ -26,8 +75,8 @@ function Hero2() {
       },
     ],
   };
-
   const options = {
+    responsive: true,
     maintainAspectRatio: false,
     scales: {
       y: {
@@ -53,13 +102,14 @@ function Hero2() {
         <div
           className="col-lg-6 col-sm-12 col-md-6"
           style={{
-            width: "400px",
             height: "400px",
           }}
         >
           <Bar options={options} data={data} />
         </div>
-        <div className="col-lg-6 col-sm-12 col-md-6"></div>
+        <div className="col-lg-6 col-sm-12 col-md-6">
+          <MaterialTable title="Material Table" data={Data} columns={columns} />
+        </div>
       </div>
     </div>
   );
