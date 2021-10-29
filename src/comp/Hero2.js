@@ -108,7 +108,11 @@ function Hero2() {
           <Bar options={options} data={data} />
         </div>
         <div className="col-lg-6 col-sm-12 col-md-6">
-          <MaterialTable title="Material Table" data={Data} columns={columns} />
+          <MaterialTable
+            title="STATE WISE DATA"
+            data={Data}
+            columns={columns}
+          />
         </div>
       </div>
     </div>
